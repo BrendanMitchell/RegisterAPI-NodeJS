@@ -1,10 +1,10 @@
 const uuid = require('uuidv4');
 import BaseEntity from './baseEntity';
-import {Product} from '../types/product';
+import {Employee} from '../types/employee';
 import {DatabaseTableName} from '../constants/databaseTableNames';
 import {ProductFieldName} from '../constants/fieldNames/productFieldNames';
 
-export default class ProductEntity extends BaseEntity {
+export default class employeeEntity extends BaseEntity {
     private _lookupCode: string;
     public get lookupCode (): string { return this._lookupCode; }
     public set lookupCode (value: string) {
