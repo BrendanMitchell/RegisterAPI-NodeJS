@@ -1,6 +1,6 @@
 const uuid = require('uuidv4');
 import BaseEntity from './baseEntity';
-import {Product} from '../types/product';
+import {Employee} from '../types/employee';
 import {DatabaseTableName} from '../constants/databaseTableNames';
 import {ProductFieldName} from '../constants/fieldNames/productFieldNames';
 
@@ -43,7 +43,7 @@ export default class ProductEntity extends BaseEntity {
 
         record[ProductFieldName.COUNT] = this._count;
         record[ProductFieldName.LOOKUP_CODE] = this._lookupCode;
-        
+
         return record;
     }
 
